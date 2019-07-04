@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SHModuleCollectionViewCell" id="gTV-IL-0wX" customClass="SHModuleCollectionViewCell" customModule="SmartHospital" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="214" height="158"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="214" height="158"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ov-WB-qC3">
+                        <rect key="frame" x="0.0" y="0.0" width="214" height="158"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ve-lF-qvy" customClass="SHFoundationModelButton" customModule="SmartHospital" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="214" height="158"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3Ve-lF-qvy" secondAttribute="trailing" id="Q4t-uI-Uyy"/>
+                            <constraint firstAttribute="bottom" secondItem="3Ve-lF-qvy" secondAttribute="bottom" id="Q7b-Uf-X0D"/>
+                            <constraint firstItem="3Ve-lF-qvy" firstAttribute="leading" secondItem="3Ov-WB-qC3" secondAttribute="leading" id="R3r-nt-0CA"/>
+                            <constraint firstItem="3Ve-lF-qvy" firstAttribute="top" secondItem="3Ov-WB-qC3" secondAttribute="top" id="eU1-td-0no"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3Ov-WB-qC3" secondAttribute="trailing" id="GZV-UQ-c06"/>
+                <constraint firstItem="3Ov-WB-qC3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="c9i-W3-KWb"/>
+                <constraint firstAttribute="bottom" secondItem="3Ov-WB-qC3" secondAttribute="bottom" id="iIi-eH-M7P"/>
+                <constraint firstItem="3Ov-WB-qC3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="v4y-cE-vFG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="214" height="158"/>
+            <connections>
+                <outlet property="nameButton" destination="3Ve-lF-qvy" id="GNm-to-Rva"/>
+            </connections>
+            <point key="canvasLocation" x="165.21739130434784" y="154.01785714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>

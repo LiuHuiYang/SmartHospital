@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		046F9F2322CD907900BD8CC0 /* SHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F9F1F22CD907900BD8CC0 /* SHViewController.swift */; };
+		046F9F2422CD907900BD8CC0 /* SHNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F9F2022CD907900BD8CC0 /* SHNavigationController.swift */; };
+		046F9F2522CD907900BD8CC0 /* SHMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F9F2122CD907900BD8CC0 /* SHMainViewController.swift */; };
+		046F9F2922CD90BA00BD8CC0 /* SHTaskToFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F9F2822CD90BA00BD8CC0 /* SHTaskToFlow.swift */; };
+		046F9F2B22CD943900BD8CC0 /* SHMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046F9F2A22CD943900BD8CC0 /* SHMainViewController.xib */; };
+		046F9F2E22CD9FA000BD8CC0 /* SHFoundationModelButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F9F2D22CD9FA000BD8CC0 /* SHFoundationModelButton.swift */; };
+		046F9F3022CDA20200BD8CC0 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F9F2F22CDA20200BD8CC0 /* UIView + Extension.swift */; };
+		046F9F3B22CDB10600BD8CC0 /* SHSymptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F9F3A22CDB10600BD8CC0 /* SHSymptomsViewController.swift */; };
+		046F9F3E22CDB1A200BD8CC0 /* SHHumenBodyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F9F3C22CDB1A200BD8CC0 /* SHHumenBodyViewController.swift */; };
+		046F9F3F22CDB1A200BD8CC0 /* SHHumenBodyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046F9F3D22CDB1A200BD8CC0 /* SHHumenBodyViewController.xib */; };
+		046F9F4122CDC96900BD8CC0 /* SHAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F9F4022CDC96900BD8CC0 /* SHAppointmentViewController.swift */; };
+		046F9F4422CDC9F700BD8CC0 /* SHMedicalFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F9F4222CDC9F700BD8CC0 /* SHMedicalFileViewController.swift */; };
+		046F9F4522CDC9F700BD8CC0 /* SHMedicalFileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046F9F4322CDC9F700BD8CC0 /* SHMedicalFileViewController.xib */; };
+		046F9F4B22CDCDAF00BD8CC0 /* SHDoOrNotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F9F4922CDCDAF00BD8CC0 /* SHDoOrNotViewController.swift */; };
+		046F9F4C22CDCDAF00BD8CC0 /* SHDoOrNotViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046F9F4A22CDCDAF00BD8CC0 /* SHDoOrNotViewController.xib */; };
+		046F9F4F22CDD5B600BD8CC0 /* SHModuleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F9F4D22CDD5B600BD8CC0 /* SHModuleCollectionViewCell.swift */; };
+		046F9F5022CDD5B600BD8CC0 /* SHModuleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046F9F4E22CDD5B600BD8CC0 /* SHModuleCollectionViewCell.xib */; };
+		046F9F5322CDEC7600BD8CC0 /* SHPrelabTrainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F9F5122CDEC7600BD8CC0 /* SHPrelabTrainViewController.swift */; };
+		046F9F5422CDEC7600BD8CC0 /* SHPrelabTrainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046F9F5222CDEC7600BD8CC0 /* SHPrelabTrainViewController.xib */; };
+		046F9F5722CDF54100BD8CC0 /* SHWaitQueueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F9F5522CDF54100BD8CC0 /* SHWaitQueueViewController.swift */; };
+		046F9F5822CDF54100BD8CC0 /* SHWaitQueueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046F9F5622CDF54100BD8CC0 /* SHWaitQueueViewController.xib */; };
+		046F9F5B22CDF79800BD8CC0 /* SHMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F9F5922CDF79800BD8CC0 /* SHMapViewController.swift */; };
+		046F9F5C22CDF79800BD8CC0 /* SHMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046F9F5A22CDF79800BD8CC0 /* SHMapViewController.xib */; };
+		04B9FC5422CC89DF00B97B3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9FC5322CC89DF00B97B3F /* AppDelegate.swift */; };
+		04B9FC5B22CC89E000B97B3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B9FC5A22CC89E000B97B3F /* Assets.xcassets */; };
+		04B9FC5E22CC89E000B97B3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B9FC5C22CC89E000B97B3F /* LaunchScreen.storyboard */; };
+		04B9FC7422CC93BE00B97B3F /* UIButton + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9FC7322CC93BE00B97B3F /* UIButton + Extension.swift */; };
+		04B9FC7622CC93C600B97B3F /* Bundle + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9FC7522CC93C600B97B3F /* Bundle + Extension.swift */; };
+		04B9FC7822CC93D300B97B3F /* UIColor + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9FC7722CC93D300B97B3F /* UIColor + Extension.swift */; };
+		04B9FC7B22CC940F00B97B3F /* PrintLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9FC7A22CC940F00B97B3F /* PrintLog.swift */; };
+		04B9FC7E22CC9B8500B97B3F /* SHSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9FC7C22CC9B8500B97B3F /* SHSettingViewController.swift */; };
+		04B9FC7F22CC9B8500B97B3F /* SHSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B9FC7D22CC9B8500B97B3F /* SHSettingViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		046F9F1F22CD907900BD8CC0 /* SHViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHViewController.swift; sourceTree = "<group>"; };
+		046F9F2022CD907900BD8CC0 /* SHNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHNavigationController.swift; sourceTree = "<group>"; };
+		046F9F2122CD907900BD8CC0 /* SHMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHMainViewController.swift; sourceTree = "<group>"; };
+		046F9F2822CD90BA00BD8CC0 /* SHTaskToFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHTaskToFlow.swift; sourceTree = "<group>"; };
+		046F9F2A22CD943900BD8CC0 /* SHMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SHMainViewController.xib; sourceTree = "<group>"; };
+		046F9F2D22CD9FA000BD8CC0 /* SHFoundationModelButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHFoundationModelButton.swift; sourceTree = "<group>"; };
+		046F9F2F22CDA20200BD8CC0 /* UIView + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+		046F9F3A22CDB10600BD8CC0 /* SHSymptomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHSymptomsViewController.swift; sourceTree = "<group>"; };
+		046F9F3C22CDB1A200BD8CC0 /* SHHumenBodyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHHumenBodyViewController.swift; sourceTree = "<group>"; };
+		046F9F3D22CDB1A200BD8CC0 /* SHHumenBodyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SHHumenBodyViewController.xib; sourceTree = "<group>"; };
+		046F9F4022CDC96900BD8CC0 /* SHAppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHAppointmentViewController.swift; sourceTree = "<group>"; };
+		046F9F4222CDC9F700BD8CC0 /* SHMedicalFileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHMedicalFileViewController.swift; sourceTree = "<group>"; };
+		046F9F4322CDC9F700BD8CC0 /* SHMedicalFileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SHMedicalFileViewController.xib; sourceTree = "<group>"; };
+		046F9F4922CDCDAF00BD8CC0 /* SHDoOrNotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHDoOrNotViewController.swift; sourceTree = "<group>"; };
+		046F9F4A22CDCDAF00BD8CC0 /* SHDoOrNotViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SHDoOrNotViewController.xib; sourceTree = "<group>"; };
+		046F9F4D22CDD5B600BD8CC0 /* SHModuleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHModuleCollectionViewCell.swift; sourceTree = "<group>"; };
+		046F9F4E22CDD5B600BD8CC0 /* SHModuleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SHModuleCollectionViewCell.xib; sourceTree = "<group>"; };
+		046F9F5122CDEC7600BD8CC0 /* SHPrelabTrainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHPrelabTrainViewController.swift; sourceTree = "<group>"; };
+		046F9F5222CDEC7600BD8CC0 /* SHPrelabTrainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SHPrelabTrainViewController.xib; sourceTree = "<group>"; };
+		046F9F5522CDF54100BD8CC0 /* SHWaitQueueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHWaitQueueViewController.swift; sourceTree = "<group>"; };
+		046F9F5622CDF54100BD8CC0 /* SHWaitQueueViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SHWaitQueueViewController.xib; sourceTree = "<group>"; };
+		046F9F5922CDF79800BD8CC0 /* SHMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHMapViewController.swift; sourceTree = "<group>"; };
+		046F9F5A22CDF79800BD8CC0 /* SHMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SHMapViewController.xib; sourceTree = "<group>"; };
+		04B9FC5022CC89DF00B97B3F /* SmartHospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHospital.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04B9FC5322CC89DF00B97B3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		04B9FC5A22CC89E000B97B3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04B9FC5D22CC89E000B97B3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04B9FC5F22CC89E000B97B3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04B9FC6722CC8B0500B97B3F /* readMe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = readMe.h; sourceTree = "<group>"; };
+		04B9FC7322CC93BE00B97B3F /* UIButton + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton + Extension.swift"; sourceTree = "<group>"; };
+		04B9FC7522CC93C600B97B3F /* Bundle + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle + Extension.swift"; sourceTree = "<group>"; };
+		04B9FC7722CC93D300B97B3F /* UIColor + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor + Extension.swift"; sourceTree = "<group>"; };
+		04B9FC7A22CC940F00B97B3F /* PrintLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrintLog.swift; sourceTree = "<group>"; };
+		04B9FC7C22CC9B8500B97B3F /* SHSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHSettingViewController.swift; sourceTree = "<group>"; };
+		04B9FC7D22CC9B8500B97B3F /* SHSettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SHSettingViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04B9FC4D22CC89DF00B97B3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		046F9F1E22CD907900BD8CC0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				046F9F1F22CD907900BD8CC0 /* SHViewController.swift */,
+				046F9F2022CD907900BD8CC0 /* SHNavigationController.swift */,
+				046F9F2122CD907900BD8CC0 /* SHMainViewController.swift */,
+				046F9F2A22CD943900BD8CC0 /* SHMainViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		046F9F2222CD907900BD8CC0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				046F9F2822CD90BA00BD8CC0 /* SHTaskToFlow.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		046F9F2C22CD9F9300BD8CC0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				046F9F2D22CD9FA000BD8CC0 /* SHFoundationModelButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		046F9F3122CDB0AB00BD8CC0 /* HumenBody */ = {
+			isa = PBXGroup;
+			children = (
+				046F9F3C22CDB1A200BD8CC0 /* SHHumenBodyViewController.swift */,
+				046F9F3D22CDB1A200BD8CC0 /* SHHumenBodyViewController.xib */,
+			);
+			path = HumenBody;
+			sourceTree = "<group>";
+		};
+		046F9F3222CDB0AB00BD8CC0 /* Appointent */ = {
+			isa = PBXGroup;
+			children = (
+				046F9F4022CDC96900BD8CC0 /* SHAppointmentViewController.swift */,
+			);
+			path = Appointent;
+			sourceTree = "<group>";
+		};
+		046F9F3322CDB0AB00BD8CC0 /* DoOrNot */ = {
+			isa = PBXGroup;
+			children = (
+				046F9F4822CDCD9F00BD8CC0 /* Controller */,
+				046F9F4722CDCD9F00BD8CC0 /* Model */,
+				046F9F4622CDCD9F00BD8CC0 /* View */,
+			);
+			path = DoOrNot;
+			sourceTree = "<group>";
+		};
+		046F9F3422CDB0B400BD8CC0 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				046F9F5922CDF79800BD8CC0 /* SHMapViewController.swift */,
+				046F9F5A22CDF79800BD8CC0 /* SHMapViewController.xib */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		046F9F3522CDB0B400BD8CC0 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				046F9F5522CDF54100BD8CC0 /* SHWaitQueueViewController.swift */,
+				046F9F5622CDF54100BD8CC0 /* SHWaitQueueViewController.xib */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
+		046F9F3622CDB0B400BD8CC0 /* PrelabTrain */ = {
+			isa = PBXGroup;
+			children = (
+				046F9F5122CDEC7600BD8CC0 /* SHPrelabTrainViewController.swift */,
+				046F9F5222CDEC7600BD8CC0 /* SHPrelabTrainViewController.xib */,
+			);
+			path = PrelabTrain;
+			sourceTree = "<group>";
+		};
+		046F9F3722CDB0B400BD8CC0 /* MedicalFile */ = {
+			isa = PBXGroup;
+			children = (
+				046F9F4222CDC9F700BD8CC0 /* SHMedicalFileViewController.swift */,
+				046F9F4322CDC9F700BD8CC0 /* SHMedicalFileViewController.xib */,
+			);
+			path = MedicalFile;
+			sourceTree = "<group>";
+		};
+		046F9F3822CDB0B400BD8CC0 /* Medication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Medication;
+			sourceTree = "<group>";
+		};
+		046F9F3922CDB0BB00BD8CC0 /* Symptoms */ = {
+			isa = PBXGroup;
+			children = (
+				046F9F3A22CDB10600BD8CC0 /* SHSymptomsViewController.swift */,
+			);
+			path = Symptoms;
+			sourceTree = "<group>";
+		};
+		046F9F4622CDCD9F00BD8CC0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				046F9F4D22CDD5B600BD8CC0 /* SHModuleCollectionViewCell.swift */,
+				046F9F4E22CDD5B600BD8CC0 /* SHModuleCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		046F9F4722CDCD9F00BD8CC0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		046F9F4822CDCD9F00BD8CC0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				046F9F4922CDCDAF00BD8CC0 /* SHDoOrNotViewController.swift */,
+				046F9F4A22CDCDAF00BD8CC0 /* SHDoOrNotViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04B9FC4722CC89DF00B97B3F = {
+			isa = PBXGroup;
+			children = (
+				04B9FC5222CC89DF00B97B3F /* SmartHospital */,
+				04B9FC5122CC89DF00B97B3F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		04B9FC5122CC89DF00B97B3F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04B9FC5022CC89DF00B97B3F /* SmartHospital.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04B9FC5222CC89DF00B97B3F /* SmartHospital */ = {
+			isa = PBXGroup;
+			children = (
+				04B9FC5322CC89DF00B97B3F /* AppDelegate.swift */,
+				04B9FC6722CC8B0500B97B3F /* readMe.h */,
+				04B9FC6822CC916D00B97B3F /* Classes */,
+				04B9FC5A22CC89E000B97B3F /* Assets.xcassets */,
+				04B9FC5C22CC89E000B97B3F /* LaunchScreen.storyboard */,
+				04B9FC5F22CC89E000B97B3F /* Info.plist */,
+			);
+			path = SmartHospital;
+			sourceTree = "<group>";
+		};
+		04B9FC6822CC916D00B97B3F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				046F9F3222CDB0AB00BD8CC0 /* Appointent */,
+				046F9F3722CDB0B400BD8CC0 /* MedicalFile */,
+				046F9F3322CDB0AB00BD8CC0 /* DoOrNot */,
+				046F9F3122CDB0AB00BD8CC0 /* HumenBody */,
+				046F9F3622CDB0B400BD8CC0 /* PrelabTrain */,
+				046F9F3922CDB0BB00BD8CC0 /* Symptoms */,
+				046F9F3422CDB0B400BD8CC0 /* Map */,
+				046F9F3822CDB0B400BD8CC0 /* Medication */,
+				046F9F3522CDB0B400BD8CC0 /* Queue */,
+				04B9FC6B22CC916D00B97B3F /* Main */,
+				04B9FC6A22CC916D00B97B3F /* Setting */,
+				04B9FC6922CC916D00B97B3F /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		04B9FC6922CC916D00B97B3F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				04B9FC7922CC940F00B97B3F /* Additional */,
+				04B9FC7222CC938500B97B3F /* Extension */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		04B9FC6A22CC916D00B97B3F /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				04B9FC7C22CC9B8500B97B3F /* SHSettingViewController.swift */,
+				04B9FC7D22CC9B8500B97B3F /* SHSettingViewController.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		04B9FC6B22CC916D00B97B3F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				046F9F2C22CD9F9300BD8CC0 /* View */,
+				046F9F1E22CD907900BD8CC0 /* Controller */,
+				046F9F2222CD907900BD8CC0 /* Model */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		04B9FC7222CC938500B97B3F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				04B9FC7522CC93C600B97B3F /* Bundle + Extension.swift */,
+				046F9F2F22CDA20200BD8CC0 /* UIView + Extension.swift */,
+				04B9FC7322CC93BE00B97B3F /* UIButton + Extension.swift */,
+				04B9FC7722CC93D300B97B3F /* UIColor + Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		04B9FC7922CC940F00B97B3F /* Additional */ = {
+			isa = PBXGroup;
+			children = (
+				04B9FC7A22CC940F00B97B3F /* PrintLog.swift */,
+			);
+			path = Additional;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04B9FC4F22CC89DF00B97B3F /* SmartHospital */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04B9FC6222CC89E000B97B3F /* Build configuration list for PBXNativeTarget "SmartHospital" */;
+			buildPhases = (
+				04B9FC4C22CC89DF00B97B3F /* Sources */,
+				04B9FC4D22CC89DF00B97B3F /* Frameworks */,
+				04B9FC4E22CC89DF00B97B3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartHospital;
+			productName = SmartHospital;
+			productReference = 04B9FC5022CC89DF00B97B3F /* SmartHospital.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04B9FC4822CC89DF00B97B3F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SH;
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Apple;
+				TargetAttributes = {
+					04B9FC4F22CC89DF00B97B3F = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 04B9FC4B22CC89DF00B97B3F /* Build configuration list for PBXProject "SmartHospital" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04B9FC4722CC89DF00B97B3F;
+			productRefGroup = 04B9FC5122CC89DF00B97B3F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04B9FC4F22CC89DF00B97B3F /* SmartHospital */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04B9FC4E22CC89DF00B97B3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				046F9F2B22CD943900BD8CC0 /* SHMainViewController.xib in Resources */,
+				046F9F4522CDC9F700BD8CC0 /* SHMedicalFileViewController.xib in Resources */,
+				04B9FC5E22CC89E000B97B3F /* LaunchScreen.storyboard in Resources */,
+				046F9F3F22CDB1A200BD8CC0 /* SHHumenBodyViewController.xib in Resources */,
+				04B9FC5B22CC89E000B97B3F /* Assets.xcassets in Resources */,
+				046F9F5C22CDF79800BD8CC0 /* SHMapViewController.xib in Resources */,
+				046F9F5022CDD5B600BD8CC0 /* SHModuleCollectionViewCell.xib in Resources */,
+				046F9F5822CDF54100BD8CC0 /* SHWaitQueueViewController.xib in Resources */,
+				046F9F4C22CDCDAF00BD8CC0 /* SHDoOrNotViewController.xib in Resources */,
+				046F9F5422CDEC7600BD8CC0 /* SHPrelabTrainViewController.xib in Resources */,
+				04B9FC7F22CC9B8500B97B3F /* SHSettingViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04B9FC4C22CC89DF00B97B3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04B9FC7B22CC940F00B97B3F /* PrintLog.swift in Sources */,
+				04B9FC7822CC93D300B97B3F /* UIColor + Extension.swift in Sources */,
+				046F9F2E22CD9FA000BD8CC0 /* SHFoundationModelButton.swift in Sources */,
+				046F9F4F22CDD5B600BD8CC0 /* SHModuleCollectionViewCell.swift in Sources */,
+				046F9F3E22CDB1A200BD8CC0 /* SHHumenBodyViewController.swift in Sources */,
+				04B9FC7422CC93BE00B97B3F /* UIButton + Extension.swift in Sources */,
+				046F9F5722CDF54100BD8CC0 /* SHWaitQueueViewController.swift in Sources */,
+				04B9FC7E22CC9B8500B97B3F /* SHSettingViewController.swift in Sources */,
+				046F9F4122CDC96900BD8CC0 /* SHAppointmentViewController.swift in Sources */,
+				046F9F2922CD90BA00BD8CC0 /* SHTaskToFlow.swift in Sources */,
+				046F9F5322CDEC7600BD8CC0 /* SHPrelabTrainViewController.swift in Sources */,
+				04B9FC7622CC93C600B97B3F /* Bundle + Extension.swift in Sources */,
+				04B9FC5422CC89DF00B97B3F /* AppDelegate.swift in Sources */,
+				046F9F3B22CDB10600BD8CC0 /* SHSymptomsViewController.swift in Sources */,
+				046F9F3022CDA20200BD8CC0 /* UIView + Extension.swift in Sources */,
+				046F9F4B22CDCDAF00BD8CC0 /* SHDoOrNotViewController.swift in Sources */,
+				046F9F5B22CDF79800BD8CC0 /* SHMapViewController.swift in Sources */,
+				046F9F2422CD907900BD8CC0 /* SHNavigationController.swift in Sources */,
+				046F9F2522CD907900BD8CC0 /* SHMainViewController.swift in Sources */,
+				046F9F2322CD907900BD8CC0 /* SHViewController.swift in Sources */,
+				046F9F4422CDC9F700BD8CC0 /* SHMedicalFileViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04B9FC5C22CC89E000B97B3F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04B9FC5D22CC89E000B97B3F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		04B9FC6022CC89E000B97B3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04B9FC6122CC89E000B97B3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04B9FC6322CC89E000B97B3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TMD6A3D429;
+				INFOPLIST_FILE = SmartHospital/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smarthomegroup.SmartHospital;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		04B9FC6422CC89E000B97B3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TMD6A3D429;
+				INFOPLIST_FILE = SmartHospital/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.smarthomegroup.SmartHospital;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04B9FC4B22CC89DF00B97B3F /* Build configuration list for PBXProject "SmartHospital" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B9FC6022CC89E000B97B3F /* Debug */,
+				04B9FC6122CC89E000B97B3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04B9FC6222CC89E000B97B3F /* Build configuration list for PBXNativeTarget "SmartHospital" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04B9FC6322CC89E000B97B3F /* Debug */,
+				04B9FC6422CC89E000B97B3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 04B9FC4822CC89DF00B97B3F /* Project object */;
+}

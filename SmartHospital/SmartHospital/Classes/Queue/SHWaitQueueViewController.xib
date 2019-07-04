@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SHWaitQueueViewController" customModule="SmartHospital" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TPh-RM-Vbd">
+                    <rect key="frame" x="0.0" y="44" width="414" height="256"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wyl-dy-ZKC">
+                            <rect key="frame" x="0.0" y="0.0" width="290" height="256"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhH-XK-YIQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="290" height="256"/>
+                                    <string key="text">    Doctor Name: Alice Thomas
+    Departments: Gynecology
+    Room NO: 602 7F</string>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.19215686269999999" green="0.59607843140000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="JhH-XK-YIQ" firstAttribute="centerY" secondItem="wyl-dy-ZKC" secondAttribute="centerY" id="Js9-Fn-Hn5"/>
+                                <constraint firstItem="JhH-XK-YIQ" firstAttribute="height" secondItem="wyl-dy-ZKC" secondAttribute="height" id="bB5-aI-OYf"/>
+                                <constraint firstItem="JhH-XK-YIQ" firstAttribute="centerX" secondItem="wyl-dy-ZKC" secondAttribute="centerX" id="tnb-QO-jOY"/>
+                                <constraint firstItem="JhH-XK-YIQ" firstAttribute="width" secondItem="wyl-dy-ZKC" secondAttribute="width" id="x1m-TT-eod"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.66274509800000003" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="wyl-dy-ZKC" secondAttribute="bottom" id="Zhz-sI-AS1"/>
+                        <constraint firstItem="wyl-dy-ZKC" firstAttribute="leading" secondItem="TPh-RM-Vbd" secondAttribute="leading" id="e89-Wx-hlE"/>
+                        <constraint firstItem="wyl-dy-ZKC" firstAttribute="width" secondItem="TPh-RM-Vbd" secondAttribute="width" multiplier="0.7" id="kZO-rV-A8u"/>
+                        <constraint firstItem="wyl-dy-ZKC" firstAttribute="top" secondItem="TPh-RM-Vbd" secondAttribute="top" id="knp-bT-RCW"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oev-xN-I13">
+                    <rect key="frame" x="0.0" y="300" width="414" height="562"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.58823529409999997" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Oev-xN-I13" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4g9-YH-BNg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Oev-xN-I13" secondAttribute="trailing" id="Frd-hk-saz"/>
+                <constraint firstItem="TPh-RM-Vbd" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="PJF-Y5-kb8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TPh-RM-Vbd" secondAttribute="trailing" id="Pm7-qa-6I0"/>
+                <constraint firstItem="TPh-RM-Vbd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Tgx-fM-W6N"/>
+                <constraint firstItem="Oev-xN-I13" firstAttribute="top" secondItem="TPh-RM-Vbd" secondAttribute="bottom" id="fyl-71-X1R"/>
+                <constraint firstItem="TPh-RM-Vbd" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="2/7" id="iux-Gs-6go"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Oev-xN-I13" secondAttribute="bottom" id="l4o-A4-6gO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

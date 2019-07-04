@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SHPrelabTrainViewController" customModule="SmartHospital" customModuleProvider="target">
+            <connections>
+                <outlet property="fastingBloodStandPrelabListView" destination="iyy-zH-EAX" id="qxD-dQ-5wv"/>
+                <outlet property="notAllowStandPrelabListView" destination="uXH-I0-Mou" id="ODD-Ub-UKY"/>
+                <outlet property="segmentedControl" destination="SdM-EZ-TrP" id="c9k-hl-f8c"/>
+                <outlet property="specicalPrelabView" destination="D1v-2c-MN5" id="ggO-1P-Mgb"/>
+                <outlet property="standPrelabView" destination="XlH-wW-7WD" id="DQi-ew-3dN"/>
+                <outlet property="view" destination="7n5-UL-Qsd" id="P3N-Nc-DWU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="7n5-UL-Qsd">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3x0-dT-m0e">
+                    <rect key="frame" x="15" y="44" width="384" height="44"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="SdM-EZ-TrP">
+                            <rect key="frame" x="0.0" y="0.0" width="384" height="45"/>
+                            <segments>
+                                <segment title="Standard"/>
+                                <segment title="Special"/>
+                            </segments>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="segmentedControlValueChanged" destination="-1" eventType="valueChanged" id="3py-3V-eFv"/>
+                            </connections>
+                        </segmentedControl>
+                    </subviews>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.66274509800000003" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="SdM-EZ-TrP" firstAttribute="height" secondItem="3x0-dT-m0e" secondAttribute="height" id="0eI-xu-go3"/>
+                        <constraint firstItem="SdM-EZ-TrP" firstAttribute="centerY" secondItem="3x0-dT-m0e" secondAttribute="centerY" id="8M3-w9-E6o"/>
+                        <constraint firstItem="SdM-EZ-TrP" firstAttribute="width" secondItem="3x0-dT-m0e" secondAttribute="width" id="Ds5-Ug-gw1"/>
+                        <constraint firstItem="SdM-EZ-TrP" firstAttribute="centerX" secondItem="3x0-dT-m0e" secondAttribute="centerX" id="rxq-jV-mAa"/>
+                        <constraint firstAttribute="height" constant="44" id="x9c-MW-gXM"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D1v-2c-MN5" userLabel="specicalPrelabView">
+                    <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XlH-wW-7WD" userLabel="standPrelabView">
+                    <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gvF-Zi-MqI" userLabel="notallowedView">
+                            <rect key="frame" x="0.0" y="387" width="414" height="387"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GdL-Qg-fLl" userLabel="notAllowTitleView">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    Not Allowed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lx9-pJ-3rp">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                            <color key="textColor" red="0.36078431370000003" green="0.66274509800000003" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="lx9-pJ-3rp" firstAttribute="width" secondItem="GdL-Qg-fLl" secondAttribute="width" id="1Ru-hL-83E"/>
+                                        <constraint firstItem="lx9-pJ-3rp" firstAttribute="centerY" secondItem="GdL-Qg-fLl" secondAttribute="centerY" id="By2-th-Vck"/>
+                                        <constraint firstItem="lx9-pJ-3rp" firstAttribute="height" secondItem="GdL-Qg-fLl" secondAttribute="height" id="VLO-Gh-Brs"/>
+                                        <constraint firstItem="lx9-pJ-3rp" firstAttribute="centerX" secondItem="GdL-Qg-fLl" secondAttribute="centerX" id="gKV-aV-r84"/>
+                                    </constraints>
+                                </view>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="uXH-I0-Mou" userLabel="notAllowStandPrelabListView">
+                                    <rect key="frame" x="0.0" y="44" width="414" height="343"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="IfR-F4-VlG">
+                                        <size key="itemSize" width="0.0" height="0.0"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-1" id="gKB-bm-uHq"/>
+                                        <outlet property="delegate" destination="-1" id="Scr-VC-eo7"/>
+                                    </connections>
+                                </collectionView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="GdL-Qg-fLl" firstAttribute="top" secondItem="gvF-Zi-MqI" secondAttribute="top" id="1Bs-7h-rB0"/>
+                                <constraint firstAttribute="trailing" secondItem="uXH-I0-Mou" secondAttribute="trailing" id="GXo-ea-y4X"/>
+                                <constraint firstAttribute="bottom" secondItem="uXH-I0-Mou" secondAttribute="bottom" id="JAE-Hg-255"/>
+                                <constraint firstItem="uXH-I0-Mou" firstAttribute="leading" secondItem="gvF-Zi-MqI" secondAttribute="leading" id="frv-yr-tzy"/>
+                                <constraint firstItem="GdL-Qg-fLl" firstAttribute="leading" secondItem="gvF-Zi-MqI" secondAttribute="leading" id="kCx-yS-Zmc"/>
+                                <constraint firstAttribute="trailing" secondItem="GdL-Qg-fLl" secondAttribute="trailing" id="rag-GX-eFB"/>
+                                <constraint firstItem="uXH-I0-Mou" firstAttribute="top" secondItem="GdL-Qg-fLl" secondAttribute="bottom" id="usm-xE-hp3"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="69m-kp-RyY" userLabel="Fasting Blood TestView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="387"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dGp-q8-adR" userLabel="allowTitleView">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    Fasting Blood Train" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGb-h8-37f">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                            <color key="textColor" red="0.36078431370000003" green="0.66274509800000003" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="GGb-h8-37f" firstAttribute="centerX" secondItem="dGp-q8-adR" secondAttribute="centerX" id="Ebe-oq-1jB"/>
+                                        <constraint firstItem="GGb-h8-37f" firstAttribute="width" secondItem="dGp-q8-adR" secondAttribute="width" id="gQc-eT-Yqe"/>
+                                        <constraint firstAttribute="height" constant="44" id="lmS-gy-zCX"/>
+                                        <constraint firstItem="GGb-h8-37f" firstAttribute="height" secondItem="dGp-q8-adR" secondAttribute="height" id="pWq-QF-hPd"/>
+                                        <constraint firstItem="GGb-h8-37f" firstAttribute="centerY" secondItem="dGp-q8-adR" secondAttribute="centerY" id="unQ-kS-Z7h"/>
+                                    </constraints>
+                                </view>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="iyy-zH-EAX" userLabel="fastingBloodStandPrelabListView">
+                                    <rect key="frame" x="0.0" y="44" width="414" height="343"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="xIb-aV-ZbN">
+                                        <size key="itemSize" width="0.0" height="0.0"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                    <connections>
+                                        <outlet property="dataSource" destination="-1" id="hXI-Z7-GKJ"/>
+                                        <outlet property="delegate" destination="-1" id="h1a-D9-Ozx"/>
+                                    </connections>
+                                </collectionView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="dGp-q8-adR" firstAttribute="leading" secondItem="69m-kp-RyY" secondAttribute="leading" id="8ZZ-wp-Gq6"/>
+                                <constraint firstItem="iyy-zH-EAX" firstAttribute="top" secondItem="dGp-q8-adR" secondAttribute="bottom" id="P65-Kr-yf0"/>
+                                <constraint firstItem="iyy-zH-EAX" firstAttribute="leading" secondItem="69m-kp-RyY" secondAttribute="leading" id="ZST-jw-GZU"/>
+                                <constraint firstAttribute="bottom" secondItem="iyy-zH-EAX" secondAttribute="bottom" id="fIl-jn-gX8"/>
+                                <constraint firstItem="dGp-q8-adR" firstAttribute="top" secondItem="69m-kp-RyY" secondAttribute="top" id="fZ1-Ux-Ltb"/>
+                                <constraint firstAttribute="trailing" secondItem="iyy-zH-EAX" secondAttribute="trailing" id="lx5-fL-1OG"/>
+                                <constraint firstAttribute="trailing" secondItem="dGp-q8-adR" secondAttribute="trailing" id="ran-dF-aOV"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="gvF-Zi-MqI" firstAttribute="top" secondItem="69m-kp-RyY" secondAttribute="bottom" id="5dH-i6-ym0"/>
+                        <constraint firstAttribute="trailing" secondItem="gvF-Zi-MqI" secondAttribute="trailing" id="GRq-pK-XZ6"/>
+                        <constraint firstItem="69m-kp-RyY" firstAttribute="height" secondItem="gvF-Zi-MqI" secondAttribute="height" id="J7K-ZF-C6u"/>
+                        <constraint firstItem="69m-kp-RyY" firstAttribute="top" secondItem="XlH-wW-7WD" secondAttribute="top" id="NH4-fL-Gw4"/>
+                        <constraint firstAttribute="bottom" secondItem="gvF-Zi-MqI" secondAttribute="bottom" id="WcV-fB-Wsy"/>
+                        <constraint firstItem="GdL-Qg-fLl" firstAttribute="height" secondItem="dGp-q8-adR" secondAttribute="height" id="XyD-Mp-UCP"/>
+                        <constraint firstAttribute="trailing" secondItem="69m-kp-RyY" secondAttribute="trailing" id="YM0-77-KAu"/>
+                        <constraint firstItem="69m-kp-RyY" firstAttribute="leading" secondItem="XlH-wW-7WD" secondAttribute="leading" id="cKd-dI-EeA"/>
+                        <constraint firstItem="gvF-Zi-MqI" firstAttribute="leading" secondItem="XlH-wW-7WD" secondAttribute="leading" id="nTq-03-Qbq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XlH-wW-7WD" firstAttribute="centerX" secondItem="D1v-2c-MN5" secondAttribute="centerX" id="2Py-6S-mCS"/>
+                <constraint firstItem="3x0-dT-m0e" firstAttribute="top" secondItem="AqH-L6-Ejn" secondAttribute="top" id="58Q-4g-dEv"/>
+                <constraint firstItem="XlH-wW-7WD" firstAttribute="height" secondItem="D1v-2c-MN5" secondAttribute="height" id="6Z1-Zs-EC4"/>
+                <constraint firstItem="XlH-wW-7WD" firstAttribute="centerY" secondItem="D1v-2c-MN5" secondAttribute="centerY" id="BA9-T2-QHW"/>
+                <constraint firstItem="XlH-wW-7WD" firstAttribute="width" secondItem="D1v-2c-MN5" secondAttribute="width" id="E1z-Ur-zGZ"/>
+                <constraint firstItem="XlH-wW-7WD" firstAttribute="top" secondItem="3x0-dT-m0e" secondAttribute="bottom" id="Erq-bZ-rTD"/>
+                <constraint firstItem="AqH-L6-Ejn" firstAttribute="trailing" secondItem="XlH-wW-7WD" secondAttribute="trailing" id="HAn-d7-jtu"/>
+                <constraint firstItem="3x0-dT-m0e" firstAttribute="leading" secondItem="AqH-L6-Ejn" secondAttribute="leading" constant="15" id="PGG-8r-B4o"/>
+                <constraint firstItem="AqH-L6-Ejn" firstAttribute="trailing" secondItem="3x0-dT-m0e" secondAttribute="trailing" constant="15" id="RrG-B0-6gw"/>
+                <constraint firstItem="XlH-wW-7WD" firstAttribute="leading" secondItem="AqH-L6-Ejn" secondAttribute="leading" id="dXa-md-Vml"/>
+                <constraint firstItem="AqH-L6-Ejn" firstAttribute="bottom" secondItem="XlH-wW-7WD" secondAttribute="bottom" id="g5k-dv-W0M"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="AqH-L6-Ejn"/>
+        </view>
+    </objects>
+</document>
