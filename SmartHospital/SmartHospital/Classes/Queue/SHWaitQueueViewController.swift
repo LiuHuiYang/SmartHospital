@@ -10,23 +10,18 @@ import UIKit
 
 class SHWaitQueueViewController: SHViewController {
 
+    
+    /// 显示信息
+    @IBOutlet weak var messageLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         navigationItem.title = "Waitting QUE"
         
-        
+        messageLabel.text =
+            "  Doctor Name: \n\t Alice Thomas" + "\n \n" +
+            "  Departments: \n\t Gynecology" + "\n \n" +
+        "  Room NO. 602 7F"
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
