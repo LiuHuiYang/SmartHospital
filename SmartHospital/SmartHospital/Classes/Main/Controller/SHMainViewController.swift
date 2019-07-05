@@ -159,6 +159,12 @@ extension SHMainViewController {
                 animated: true
             )
             
+        case 2:
+            navigationController?.pushViewController(
+                SHMediacationViewController(),
+                animated: true
+            )
+            
         case 3:
             navigationController?.pushViewController(
                 SHAppointmentViewController(),

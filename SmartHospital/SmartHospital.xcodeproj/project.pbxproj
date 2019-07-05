@@ -33,6 +33,11 @@
 		048C505122CEE0C80079928C /* tasks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 048C505022CEE0C80079928C /* tasks.plist */; };
 		048C505422CEE3770079928C /* SHTaskItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C505222CEE3770079928C /* SHTaskItemTableViewCell.swift */; };
 		048C505522CEE3770079928C /* SHTaskItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048C505322CEE3770079928C /* SHTaskItemTableViewCell.xib */; };
+		048C506522CEFFA30079928C /* SHMediactionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C506022CEFFA30079928C /* SHMediactionCollectionViewCell.swift */; };
+		048C506622CEFFA30079928C /* SHMediactionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048C506122CEFFA30079928C /* SHMediactionCollectionViewCell.xib */; };
+		048C506722CEFFA30079928C /* SHMediacationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C506322CEFFA30079928C /* SHMediacationViewController.swift */; };
+		048C506822CEFFA30079928C /* SHMediacationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048C506422CEFFA30079928C /* SHMediacationViewController.xib */; };
+		048C506A22CEFFB50079928C /* SHMedicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C506922CEFFB50079928C /* SHMedicine.swift */; };
 		04B9FC5422CC89DF00B97B3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9FC5322CC89DF00B97B3F /* AppDelegate.swift */; };
 		04B9FC5B22CC89E000B97B3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B9FC5A22CC89E000B97B3F /* Assets.xcassets */; };
 		04B9FC5E22CC89E000B97B3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B9FC5C22CC89E000B97B3F /* LaunchScreen.storyboard */; };
@@ -71,6 +76,11 @@
 		048C505022CEE0C80079928C /* tasks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tasks.plist; sourceTree = "<group>"; };
 		048C505222CEE3770079928C /* SHTaskItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHTaskItemTableViewCell.swift; sourceTree = "<group>"; };
 		048C505322CEE3770079928C /* SHTaskItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SHTaskItemTableViewCell.xib; sourceTree = "<group>"; };
+		048C506022CEFFA30079928C /* SHMediactionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHMediactionCollectionViewCell.swift; sourceTree = "<group>"; };
+		048C506122CEFFA30079928C /* SHMediactionCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHMediactionCollectionViewCell.xib; sourceTree = "<group>"; };
+		048C506322CEFFA30079928C /* SHMediacationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHMediacationViewController.swift; sourceTree = "<group>"; };
+		048C506422CEFFA30079928C /* SHMediacationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHMediacationViewController.xib; sourceTree = "<group>"; };
+		048C506922CEFFB50079928C /* SHMedicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHMedicine.swift; sourceTree = "<group>"; };
 		04B9FC5022CC89DF00B97B3F /* SmartHospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHospital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B9FC5322CC89DF00B97B3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04B9FC5A22CC89E000B97B3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -191,6 +201,9 @@
 		046F9F3822CDB0B400BD8CC0 /* Medication */ = {
 			isa = PBXGroup;
 			children = (
+				048C506222CEFFA30079928C /* Controller */,
+				048C505E22CEFFA30079928C /* Model */,
+				048C505F22CEFFA30079928C /* View */,
 			);
 			path = Medication;
 			sourceTree = "<group>";
@@ -224,6 +237,32 @@
 			children = (
 				046F9F4922CDCDAF00BD8CC0 /* SHDoOrNotViewController.swift */,
 				046F9F4A22CDCDAF00BD8CC0 /* SHDoOrNotViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		048C505E22CEFFA30079928C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				048C506922CEFFB50079928C /* SHMedicine.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		048C505F22CEFFA30079928C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				048C506022CEFFA30079928C /* SHMediactionCollectionViewCell.swift */,
+				048C506122CEFFA30079928C /* SHMediactionCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		048C506222CEFFA30079928C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				048C506322CEFFA30079928C /* SHMediacationViewController.swift */,
+				048C506422CEFFA30079928C /* SHMediacationViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -393,6 +432,8 @@
 				046F9F5022CDD5B600BD8CC0 /* SHModuleCollectionViewCell.xib in Resources */,
 				046F9F5822CDF54100BD8CC0 /* SHWaitQueueViewController.xib in Resources */,
 				046F9F4C22CDCDAF00BD8CC0 /* SHDoOrNotViewController.xib in Resources */,
+				048C506622CEFFA30079928C /* SHMediactionCollectionViewCell.xib in Resources */,
+				048C506822CEFFA30079928C /* SHMediacationViewController.xib in Resources */,
 				046F9F5422CDEC7600BD8CC0 /* SHPrelabTrainViewController.xib in Resources */,
 				04B9FC7F22CC9B8500B97B3F /* SHSettingViewController.xib in Resources */,
 				048C505122CEE0C80079928C /* tasks.plist in Resources */,
@@ -412,11 +453,13 @@
 				046F9F2E22CD9FA000BD8CC0 /* SHFoundationModelButton.swift in Sources */,
 				046F9F4F22CDD5B600BD8CC0 /* SHModuleCollectionViewCell.swift in Sources */,
 				046F9F3E22CDB1A200BD8CC0 /* SHHumenBodyViewController.swift in Sources */,
+				048C506522CEFFA30079928C /* SHMediactionCollectionViewCell.swift in Sources */,
 				04B9FC7422CC93BE00B97B3F /* UIButton + Extension.swift in Sources */,
 				046F9F5722CDF54100BD8CC0 /* SHWaitQueueViewController.swift in Sources */,
 				04B9FC7E22CC9B8500B97B3F /* SHSettingViewController.swift in Sources */,
 				046F9F4122CDC96900BD8CC0 /* SHAppointmentViewController.swift in Sources */,
 				046F9F2922CD90BA00BD8CC0 /* SHTaskToFlow.swift in Sources */,
+				048C506722CEFFA30079928C /* SHMediacationViewController.swift in Sources */,
 				046F9F5322CDEC7600BD8CC0 /* SHPrelabTrainViewController.swift in Sources */,
 				04B9FC7622CC93C600B97B3F /* Bundle + Extension.swift in Sources */,
 				04B9FC5422CC89DF00B97B3F /* AppDelegate.swift in Sources */,
@@ -426,6 +469,7 @@
 				046F9F5B22CDF79800BD8CC0 /* SHMapViewController.swift in Sources */,
 				046F9F2422CD907900BD8CC0 /* SHNavigationController.swift in Sources */,
 				046F9F2522CD907900BD8CC0 /* SHMainViewController.swift in Sources */,
+				048C506A22CEFFB50079928C /* SHMedicine.swift in Sources */,
 				046F9F2322CD907900BD8CC0 /* SHViewController.swift in Sources */,
 				046F9F4422CDC9F700BD8CC0 /* SHMedicalFileViewController.swift in Sources */,
 			);
