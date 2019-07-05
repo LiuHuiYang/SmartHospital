@@ -9,10 +9,12 @@
 import UIKit
 
 class SHMainViewController: SHViewController {
+     
+    /// 任务信息
+    private var taskItems = [SHTaskToFlow]()
     
-    
-    /// 功能视图
-    @IBOutlet weak var foundationView: UIView!
+    /// 任务信息列表
+    @IBOutlet weak var taskListView: UITableView!
     
     /// 功能模块图片
     private lazy var modules = [
@@ -27,6 +29,8 @@ class SHMainViewController: SHViewController {
         "Symptoms"
     ]
     
+    /// 功能视图
+    @IBOutlet weak var foundationView: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,21 +38,8 @@ class SHMainViewController: SHViewController {
         // 设置导航栏
         setupNavigationBar()
         
-        var array = [SHTaskToFlow]()
-        // 显示信息
-        for i in 0 ..< 5 {
-            
-            let task = SHTaskToFlow()
-            
-            task.task = "General Checkup"
-//            task.sequenceNumber = UInt(i + 1)
-//            task.roomNumber = "Room: B11"
-//            task.time = "11:30"
-//            task.status = .done
-            
-            array.append(task)
-        }
-        
+        // 显示任务信息
+        showTaskItems()
       
         // 显示功能模块
         showFoundationModelView()
@@ -58,6 +49,92 @@ class SHMainViewController: SHViewController {
         super.viewDidLayoutSubviews()
         
         layouFoundationModelView()
+    }
+}
+
+
+// MARK: - 显示排队信息
+extension SHMainViewController: UITableViewDataSource {
+    
+    /// 显示任务列表
+    private func showTaskItems() {
+        
+        // 注册cell
+        taskListView.register(
+            UINib(nibName: taskItemViewCellReuseIdentifier,
+                  bundle: nil),
+            forCellReuseIdentifier:
+                taskItemViewCellReuseIdentifier
+        )
+        
+        taskListView.rowHeight =
+            SHTaskItemTableViewCell.rowHeight
+        
+        // 加载信息
+        loadTaskMessage { (items) in
+            
+            self.taskItems.append(contentsOf: items)
+            
+            // 刷新列表
+            self.taskListView.reloadData()
+        }
+    }
+    
+    /// 加载日志信息
+    private func loadTaskMessage(_ items: @escaping ([SHTaskToFlow]) -> ()) {
+        
+        // 模拟网络加载
+        DispatchQueue.global().async {
+            
+            var taskItems = [SHTaskToFlow]()
+            
+            guard let filePath =
+                Bundle.main.path(
+                    forResource: "tasks.plist", ofType: nil
+                ),
+                
+                let array = NSArray(
+                    contentsOfFile: filePath) as? [[String: Any]] else {
+                        
+                        return
+            }
+            
+            for dict in array {
+                
+                let item = SHTaskToFlow(dictionary: dict)
+                
+                taskItems.append(item)
+            }
+            
+            // 主线程更新信息
+            DispatchQueue.main.async(execute: {
+                
+                // 执行闭包
+                items(taskItems)
+            })
+        }
+    }
+    
+    
+    // MARK: - 数据源方法
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return taskItems.count
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell =
+            tableView.dequeueReusableCell(
+                withIdentifier: taskItemViewCellReuseIdentifier,
+                for: indexPath
+            ) as! SHTaskItemTableViewCell
+        
+        cell.taskItem = taskItems[indexPath.row]
+        
+        return cell
     }
 }
 

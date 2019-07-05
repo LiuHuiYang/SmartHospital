@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SHMainViewController" customModule="SmartHospital" customModuleProvider="target">
             <connections>
                 <outlet property="foundationView" destination="8fU-zR-aVG" id="QCu-TK-ufs"/>
+                <outlet property="taskListView" destination="N9r-gH-VbS" id="cHf-7X-FGZ"/>
                 <outlet property="view" destination="iN0-l3-epB" id="e8T-pL-ekj"/>
             </connections>
         </placeholder>
@@ -23,7 +24,23 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vJP-gC-cwq" userLabel="listView">
                     <rect key="frame" x="0.0" y="44" width="414" height="256"/>
-                    <color key="backgroundColor" red="0.36078431372549019" green="0.66274509803921566" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="N9r-gH-VbS">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="256"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="C6b-uh-gRB"/>
+                                <outlet property="delegate" destination="-1" id="6o0-5S-QRC"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="N9r-gH-VbS" firstAttribute="top" secondItem="vJP-gC-cwq" secondAttribute="top" id="Tbv-Ox-Mrf"/>
+                        <constraint firstAttribute="bottom" secondItem="N9r-gH-VbS" secondAttribute="bottom" id="flp-Ru-vDv"/>
+                        <constraint firstAttribute="trailing" secondItem="N9r-gH-VbS" secondAttribute="trailing" id="rcQ-h7-Cvd"/>
+                        <constraint firstItem="N9r-gH-VbS" firstAttribute="leading" secondItem="vJP-gC-cwq" secondAttribute="leading" id="tg3-JK-jLs"/>
+                    </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8fU-zR-aVG" userLabel="foundationView">
                     <rect key="frame" x="0.0" y="300" width="414" height="562"/>

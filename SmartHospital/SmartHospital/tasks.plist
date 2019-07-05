@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>task</key>
+		<string>General Checkup</string>
+		<key>sequenceNumber</key>
+		<integer>1</integer>
+		<key>roomNumber</key>
+		<string>B11</string>
+		<key>status</key>
+		<integer>0</integer>
+		<key>time</key>
+		<string>11:30</string>
+	</dict>
+	<dict>
+		<key>task</key>
+		<string>Dr.Jack Winn</string>
+		<key>sequenceNumber</key>
+		<integer>2</integer>
+		<key>roomNumber</key>
+		<string>C19</string>
+		<key>status</key>
+		<integer>0</integer>
+		<key>time</key>
+		<string>11:45</string>
+	</dict>
+	<dict>
+		<key>task</key>
+		<string>Blood Train LAB</string>
+		<key>sequenceNumber</key>
+		<integer>3</integer>
+		<key>roomNumber</key>
+		<string>B12</string>
+		<key>status</key>
+		<integer>1</integer>
+		<key>time</key>
+		<string>11:55</string>
+	</dict>
+	<dict>
+		<key>task</key>
+		<string>Back To Dr.Jack</string>
+		<key>sequenceNumber</key>
+		<integer>4</integer>
+		<key>roomNumber</key>
+		<string>B11</string>
+		<key>status</key>
+		<integer>2</integer>
+		<key>time</key>
+		<string>??:??</string>
+	</dict>
+	<dict>
+		<key>task</key>
+		<string>To Attend The Clinic</string>
+		<key>sequenceNumber</key>
+		<integer>5</integer>
+		<key>roomNumber</key>
+		<string>B11</string>
+		<key>status</key>
+		<integer>2</integer>
+		<key>time</key>
+		<string>??:??</string>
+	</dict>
+</array>
+</plist>

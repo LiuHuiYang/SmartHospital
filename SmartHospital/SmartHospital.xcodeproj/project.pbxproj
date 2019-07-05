@@ -30,6 +30,9 @@
 		046F9F5822CDF54100BD8CC0 /* SHWaitQueueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046F9F5622CDF54100BD8CC0 /* SHWaitQueueViewController.xib */; };
 		046F9F5B22CDF79800BD8CC0 /* SHMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046F9F5922CDF79800BD8CC0 /* SHMapViewController.swift */; };
 		046F9F5C22CDF79800BD8CC0 /* SHMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046F9F5A22CDF79800BD8CC0 /* SHMapViewController.xib */; };
+		048C505122CEE0C80079928C /* tasks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 048C505022CEE0C80079928C /* tasks.plist */; };
+		048C505422CEE3770079928C /* SHTaskItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048C505222CEE3770079928C /* SHTaskItemTableViewCell.swift */; };
+		048C505522CEE3770079928C /* SHTaskItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 048C505322CEE3770079928C /* SHTaskItemTableViewCell.xib */; };
 		04B9FC5422CC89DF00B97B3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9FC5322CC89DF00B97B3F /* AppDelegate.swift */; };
 		04B9FC5B22CC89E000B97B3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04B9FC5A22CC89E000B97B3F /* Assets.xcassets */; };
 		04B9FC5E22CC89E000B97B3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04B9FC5C22CC89E000B97B3F /* LaunchScreen.storyboard */; };
@@ -65,6 +68,9 @@
 		046F9F5622CDF54100BD8CC0 /* SHWaitQueueViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SHWaitQueueViewController.xib; sourceTree = "<group>"; };
 		046F9F5922CDF79800BD8CC0 /* SHMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHMapViewController.swift; sourceTree = "<group>"; };
 		046F9F5A22CDF79800BD8CC0 /* SHMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SHMapViewController.xib; sourceTree = "<group>"; };
+		048C505022CEE0C80079928C /* tasks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tasks.plist; sourceTree = "<group>"; };
+		048C505222CEE3770079928C /* SHTaskItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHTaskItemTableViewCell.swift; sourceTree = "<group>"; };
+		048C505322CEE3770079928C /* SHTaskItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SHTaskItemTableViewCell.xib; sourceTree = "<group>"; };
 		04B9FC5022CC89DF00B97B3F /* SmartHospital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHospital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04B9FC5322CC89DF00B97B3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04B9FC5A22CC89E000B97B3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -113,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				046F9F2D22CD9FA000BD8CC0 /* SHFoundationModelButton.swift */,
+				048C505222CEE3770079928C /* SHTaskItemTableViewCell.swift */,
+				048C505322CEE3770079928C /* SHTaskItemTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -243,6 +251,7 @@
 				04B9FC6722CC8B0500B97B3F /* readMe.h */,
 				04B9FC6822CC916D00B97B3F /* Classes */,
 				04B9FC5A22CC89E000B97B3F /* Assets.xcassets */,
+				048C505022CEE0C80079928C /* tasks.plist */,
 				04B9FC5C22CC89E000B97B3F /* LaunchScreen.storyboard */,
 				04B9FC5F22CC89E000B97B3F /* Info.plist */,
 			);
@@ -376,6 +385,7 @@
 			files = (
 				046F9F2B22CD943900BD8CC0 /* SHMainViewController.xib in Resources */,
 				046F9F4522CDC9F700BD8CC0 /* SHMedicalFileViewController.xib in Resources */,
+				048C505522CEE3770079928C /* SHTaskItemTableViewCell.xib in Resources */,
 				04B9FC5E22CC89E000B97B3F /* LaunchScreen.storyboard in Resources */,
 				046F9F3F22CDB1A200BD8CC0 /* SHHumenBodyViewController.xib in Resources */,
 				04B9FC5B22CC89E000B97B3F /* Assets.xcassets in Resources */,
@@ -385,6 +395,7 @@
 				046F9F4C22CDCDAF00BD8CC0 /* SHDoOrNotViewController.xib in Resources */,
 				046F9F5422CDEC7600BD8CC0 /* SHPrelabTrainViewController.xib in Resources */,
 				04B9FC7F22CC9B8500B97B3F /* SHSettingViewController.xib in Resources */,
+				048C505122CEE0C80079928C /* tasks.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +408,7 @@
 			files = (
 				04B9FC7B22CC940F00B97B3F /* PrintLog.swift in Sources */,
 				04B9FC7822CC93D300B97B3F /* UIColor + Extension.swift in Sources */,
+				048C505422CEE3770079928C /* SHTaskItemTableViewCell.swift in Sources */,
 				046F9F2E22CD9FA000BD8CC0 /* SHFoundationModelButton.swift in Sources */,
 				046F9F4F22CDD5B600BD8CC0 /* SHModuleCollectionViewCell.swift in Sources */,
 				046F9F3E22CDB1A200BD8CC0 /* SHHumenBodyViewController.swift in Sources */,
