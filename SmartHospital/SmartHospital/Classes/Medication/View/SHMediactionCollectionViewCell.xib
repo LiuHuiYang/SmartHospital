@@ -154,22 +154,48 @@
                                         <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="07x-C4-cML">
+                                        <rect key="frame" x="0.0" y="72.5" width="373" height="1"/>
+                                        <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="gxL-DX-Ox9"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="ha5-aw-jLG" firstAttribute="centerX" secondItem="BLT-dv-fED" secondAttribute="centerX" id="Ahi-xI-bm8"/>
                                     <constraint firstItem="BLT-dv-fED" firstAttribute="leading" secondItem="dS2-cF-3TW" secondAttribute="leading" id="Edq-SJ-DAy"/>
+                                    <constraint firstItem="07x-C4-cML" firstAttribute="leading" secondItem="dS2-cF-3TW" secondAttribute="leading" id="FMx-P4-Ncg"/>
                                     <constraint firstAttribute="bottom" secondItem="ha5-aw-jLG" secondAttribute="bottom" id="HUA-O5-CFm"/>
                                     <constraint firstItem="ha5-aw-jLG" firstAttribute="width" secondItem="BLT-dv-fED" secondAttribute="width" id="LTM-XC-X2Y"/>
+                                    <constraint firstAttribute="bottom" secondItem="07x-C4-cML" secondAttribute="bottom" id="Niq-CN-HtO"/>
                                     <constraint firstItem="BLT-dv-fED" firstAttribute="top" secondItem="dS2-cF-3TW" secondAttribute="top" id="PUm-3A-iHZ"/>
                                     <constraint firstAttribute="trailing" secondItem="BLT-dv-fED" secondAttribute="trailing" id="YKE-TS-3RQ"/>
                                     <constraint firstItem="ha5-aw-jLG" firstAttribute="top" secondItem="BLT-dv-fED" secondAttribute="bottom" id="bSP-0d-vSE"/>
                                     <constraint firstItem="ha5-aw-jLG" firstAttribute="height" secondItem="BLT-dv-fED" secondAttribute="height" id="mb9-Fm-7Mq"/>
+                                    <constraint firstAttribute="trailing" secondItem="07x-C4-cML" secondAttribute="trailing" id="tM5-8S-UX9"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CQb-d0-20g" userLabel="detailView">
                                 <rect key="frame" x="0.0" y="220.5" width="373" height="294.5"/>
-                                <color key="backgroundColor" red="0.94901960780000005" green="0.59607843140000005" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tLv-ks-rI2">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="294.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="gTV-IL-0wX" id="ajb-o3-ns3"/>
+                                            <outlet property="delegate" destination="gTV-IL-0wX" id="lWl-Gc-V5p"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tLv-ks-rI2" secondAttribute="trailing" id="01j-CQ-5CX"/>
+                                    <constraint firstAttribute="bottom" secondItem="tLv-ks-rI2" secondAttribute="bottom" id="TAi-Jf-cr8"/>
+                                    <constraint firstItem="tLv-ks-rI2" firstAttribute="top" secondItem="CQb-d0-20g" secondAttribute="top" id="ah2-on-nI3"/>
+                                    <constraint firstItem="tLv-ks-rI2" firstAttribute="leading" secondItem="CQb-d0-20g" secondAttribute="leading" id="hei-MI-36T"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -208,6 +234,7 @@
                 <outlet property="betchShapeImageView" destination="Sfz-97-3W2" id="fEZ-eb-NJn"/>
                 <outlet property="endDateLabel" destination="emm-tn-izo" id="Qle-MO-4YE"/>
                 <outlet property="intervalTimeLabel" destination="ha5-aw-jLG" id="enl-2f-KgZ"/>
+                <outlet property="listView" destination="tLv-ks-rI2" id="b7m-Yf-SvB"/>
                 <outlet property="singleShadeLabel" destination="bdq-jv-j2M" id="wYI-Fj-P1w"/>
                 <outlet property="singleShapeImageView" destination="N0B-Sn-jLH" id="mFR-Gz-tSN"/>
                 <outlet property="startDateLabel" destination="cFI-8I-ug9" id="Yn8-D7-QNw"/>

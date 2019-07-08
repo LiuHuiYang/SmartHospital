@@ -8,8 +8,10 @@
 
 import UIKit
 
+/// cell重用标示符
+private let useDescriptionViewCellReuseIdentifier = "SHUseDescriptionViewCell"
+
 class SHMediactionCollectionViewCell: UICollectionViewCell {
-    
     
     /// 药物处方
     var medicine: SHMedicine? {
@@ -52,6 +54,7 @@ class SHMediactionCollectionViewCell: UICollectionViewCell {
             intervalTimeLabel.text = medicine!.intervalTime
             
             
+            listView.reloadData()
         }
     }
     
@@ -80,11 +83,51 @@ class SHMediactionCollectionViewCell: UICollectionViewCell {
     /// 间隔时间
     @IBOutlet weak var intervalTimeLabel: UILabel!
     
+    /// 使用方法描述列表
+    @IBOutlet weak var listView: UITableView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
         backgroundColor = .clear
         
+        listView.rowHeight =
+            SHUseDescriptionViewCell.rowHeight
+        
+        listView.register(
+            UINib(
+                nibName: useDescriptionViewCellReuseIdentifier,
+                bundle: nil
+            ),
+            
+            forCellReuseIdentifier:
+                useDescriptionViewCellReuseIdentifier
+        )
     }
 
+}
+
+
+// MARK: - UITableViewDataSource
+extension SHMediactionCollectionViewCell: UITableViewDataSource {
+   
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return medicine?.useDescriptions.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell =
+            tableView.dequeueReusableCell(
+                withIdentifier:
+                useDescriptionViewCellReuseIdentifier,
+                for: indexPath
+        ) as! SHUseDescriptionViewCell
+        
+        cell.useDescription =
+            medicine?.useDescriptions[indexPath.row]
+        
+        return cell
+    }
 }

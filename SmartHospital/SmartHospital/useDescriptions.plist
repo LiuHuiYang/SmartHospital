@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>startDate</key>
+		<string>July.25, 2019</string>
+		<key>endDate</key>
+		<string>July.30, 2019</string>
+		<key>timesPerDay</key>
+		<string>6 Times A Day</string>
+		<key>intervalTime</key>
+		<string>every 4 hours</string>
+		<key>batchShape</key>
+		<string>Capsule Box Shape</string>
+		<key>singleShape</key>
+		<string>Capsule Shape</string>
+		<key>useDescriptions</key>
+		<array>
+			<dict>
+				<key>showType</key>
+				<integer>0</integer>
+				<key>timeIcon</key>
+				<string>medicine_dayOrNight</string>
+				<key>useTime</key>
+				<string>00:00</string>
+				<key>singleShape</key>
+				<string>Capsule Shape</string>
+				<key>quantity</key>
+				<string>X 1</string>
+			</dict>
+			<dict>
+				<key>showType</key>
+				<integer>0</integer>
+				<key>timeIcon</key>
+				<string>medicine_dayOrNight</string>
+				<key>useTime</key>
+				<string>04:00</string>
+				<key>singleShape</key>
+				<string>Capsule Shape</string>
+				<key>quantity</key>
+				<string>X 1</string>
+			</dict>
+			<dict>
+				<key>showType</key>
+				<integer>0</integer>
+				<key>timeIcon</key>
+				<string>medicine_dayOrNight</string>
+				<key>useTime</key>
+				<string>08:00</string>
+				<key>singleShape</key>
+				<string>Capsule Shape</string>
+				<key>quantity</key>
+				<string>X 1</string>
+			</dict>
+			<dict>
+				<key>showType</key>
+				<integer>0</integer>
+				<key>timeIcon</key>
+				<string>medicine_dayOrNight</string>
+				<key>useTime</key>
+				<string>12:00</string>
+				<key>singleShape</key>
+				<string>Capsule Shape</string>
+				<key>quantity</key>
+				<string>X 1</string>
+			</dict>
+			<dict>
+				<key>showType</key>
+				<integer>0</integer>
+				<key>timeIcon</key>
+				<string>medicine_dayOrNight</string>
+				<key>useTime</key>
+				<string>16:00</string>
+				<key>singleShape</key>
+				<string>Capsule Shape</string>
+				<key>quantity</key>
+				<string>X 1</string>
+			</dict>
+			<dict>
+				<key>showType</key>
+				<integer>0</integer>
+				<key>timeIcon</key>
+				<string>medicine_dayOrNight</string>
+				<key>useTime</key>
+				<string>20:00</string>
+				<key>singleShape</key>
+				<string>Capsule Shape</string>
+				<key>quantity</key>
+				<string>X 1</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>startDate</key>
+		<string>July.25, 2019</string>
+		<key>endDate</key>
+		<string>July.30, 2019</string>
+		<key>timesPerDay</key>
+		<string>3 Times A Day</string>
+		<key>intervalTime</key>
+		<string>every 4 hours</string>
+		<key>batchShape</key>
+		<string>Bottle Shape</string>
+		<key>singleShape</key>
+		<string>Pill Shape</string>
+		<key>useDescriptions</key>
+		<array>
+			<dict>
+				<key>showType</key>
+				<integer>1</integer>
+				<key>timeIcon</key>
+				<string>medicine_morning</string>
+				<key>useTime</key>
+				<string>medicineBeforeDining</string>
+				<key>singleShape</key>
+				<string>Pill Shape</string>
+				<key>quantity</key>
+				<string>X 1</string>
+			</dict>
+			<dict>
+				<key>showType</key>
+				<integer>1</integer>
+				<key>timeIcon</key>
+				<string>medicine_noon</string>
+				<key>useTime</key>
+				<string>medicineDonotTake</string>
+				<key>singleShape</key>
+				<string>Pill Shape</string>
+				<key>quantity</key>
+				<string>X 1</string>
+			</dict>
+			<dict>
+				<key>showType</key>
+				<integer>1</integer>
+				<key>timeIcon</key>
+				<string>medicine_night</string>
+				<key>useTime</key>
+				<string>medicineBeforeDining</string>
+				<key>singleShape</key>
+				<string>Pill Shape</string>
+				<key>quantity</key>
+				<string>X 1</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>startDate</key>
+		<string>July.25, 2019</string>
+		<key>endDate</key>
+		<string>July.30, 2019</string>
+		<key>timesPerDay</key>
+		<string>3 Times A Day</string>
+		<key>intervalTime</key>
+		<string>every 4 hours</string>
+		<key>batchShape</key>
+		<string>Can Shape</string>
+		<key>singleShape</key>
+		<string>Liquid State</string>
+		<key>useDescriptions</key>
+		<array>
+			<dict>
+				<key>showType</key>
+				<integer>1</integer>
+				<key>timeIcon</key>
+				<string>medicine_morning</string>
+				<key>useTime</key>
+				<string>medicineBeforeDining</string>
+				<key>singleShape</key>
+				<string>Liquid State</string>
+				<key>quantity</key>
+				<string>X 1</string>
+			</dict>
+			<dict>
+				<key>showType</key>
+				<integer>1</integer>
+				<key>timeIcon</key>
+				<string>medicine_noon</string>
+				<key>useTime</key>
+				<string>medicineDonotTake</string>
+				<key>singleShape</key>
+				<string>Liquid State</string>
+				<key>quantity</key>
+				<string>X 1</string>
+			</dict>
+			<dict>
+				<key>showType</key>
+				<integer>1</integer>
+				<key>timeIcon</key>
+				<string>medicine_night</string>
+				<key>useTime</key>
+				<string>medicineBeforeDining</string>
+				<key>singleShape</key>
+				<string>Liquid State</string>
+				<key>quantity</key>
+				<string>X 1</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

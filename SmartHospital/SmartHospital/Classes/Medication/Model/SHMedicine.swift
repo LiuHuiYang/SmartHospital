@@ -10,7 +10,7 @@ import UIKit
 
 
 /// 单个药品处方说明
-class SHMedicine: NSObject {
+@objcMembers class SHMedicine: NSObject {
 
     /// 开始日期
     var startDate: String = ""
@@ -30,11 +30,49 @@ class SHMedicine: NSObject {
     /// 间隔时间
     var intervalTime: String = ""
     
+    /// 使用描述集合
+    var useDescriptions = [SHSpecificDosage]()
+    
     // MARAK: - 构造
     
     override init() {
         super.init()
     }
     
+    /// kvc设置
+    init(dictionary: [String: Any]) {
+        super.init()
+        
+        setValuesForKeys(dictionary)
+    }
     
+    override func setValue(_ value: Any?, forKey key: String) {
+        
+        if key == "useDescriptions" {
+            
+            if let array = value as? [[String: Any]] {
+                
+                var descriptions = [SHSpecificDosage]()
+                
+                for dict in array {
+                    
+                    descriptions.append(
+                         SHSpecificDosage(
+                            dictionary: dict
+                        )
+                    )
+                }
+                
+                self.useDescriptions = descriptions
+            }
+            
+            return
+        }
+        
+        super.setValue(value, forKey: key)
+    }
+    
+    override func setValue(_ value: Any?, forUndefinedKey key: String) {
+        printLog("没有设置 key: \(key) - value: \(value ?? "")")
+    }
 }

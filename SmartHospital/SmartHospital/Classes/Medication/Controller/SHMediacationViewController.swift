@@ -74,26 +74,23 @@ extension SHMediacationViewController {
         DispatchQueue.global().async {
             
             var drugs = [SHMedicine]()
+           
+            guard let filePath =
+                Bundle.main.path(
+                    forResource: "useDescriptions.plist", ofType: nil
+                ),
+                
+                let array = NSArray(
+                    contentsOfFile: filePath) as? [[String: Any]] else {
+                        
+                        return
+            }
             
-            let shapes = [
-                ["Capsule Box Shape", "Capsule Shape"],
-                ["Bottle Shape", "Pill Shape"],
-                ["Can Shape", "Liquid State"]
-            ]
-             
-            for index in 0 ..< shapes.count {
+            for dict in array {
                 
-                let medicine = SHMedicine()
-                medicine.startDate = "July.25, 2019"
-                medicine.endDate = "July.30, 2019"
+                let item = SHMedicine(dictionary: dict)
                 
-                medicine.timesPerDay = "6 Times A Day"
-                medicine.intervalTime = "every 4 hours"
-                
-                medicine.batchShape = shapes[index][0]
-                medicine.singleShape = shapes[index][1]
-            
-                drugs.append(medicine)
+                drugs.append(item)
             }
             
             // 主线程更新信息

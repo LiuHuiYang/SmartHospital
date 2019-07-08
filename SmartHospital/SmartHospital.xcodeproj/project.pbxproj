@@ -47,6 +47,10 @@
 		04B9FC7B22CC940F00B97B3F /* PrintLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9FC7A22CC940F00B97B3F /* PrintLog.swift */; };
 		04B9FC7E22CC9B8500B97B3F /* SHSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B9FC7C22CC9B8500B97B3F /* SHSettingViewController.swift */; };
 		04B9FC7F22CC9B8500B97B3F /* SHSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04B9FC7D22CC9B8500B97B3F /* SHSettingViewController.xib */; };
+		04D9E50B22D2D7C200ACDFC6 /* SHSpecificDosage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D9E50A22D2D7C200ACDFC6 /* SHSpecificDosage.swift */; };
+		04D9E50E22D2D9CE00ACDFC6 /* SHUseDescriptionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D9E50C22D2D9CE00ACDFC6 /* SHUseDescriptionViewCell.swift */; };
+		04D9E50F22D2D9CE00ACDFC6 /* SHUseDescriptionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D9E50D22D2D9CE00ACDFC6 /* SHUseDescriptionViewCell.xib */; };
+		04D9E51322D2E61400ACDFC6 /* useDescriptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04D9E51222D2E61400ACDFC6 /* useDescriptions.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +97,10 @@
 		04B9FC7A22CC940F00B97B3F /* PrintLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrintLog.swift; sourceTree = "<group>"; };
 		04B9FC7C22CC9B8500B97B3F /* SHSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHSettingViewController.swift; sourceTree = "<group>"; };
 		04B9FC7D22CC9B8500B97B3F /* SHSettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SHSettingViewController.xib; sourceTree = "<group>"; };
+		04D9E50A22D2D7C200ACDFC6 /* SHSpecificDosage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHSpecificDosage.swift; sourceTree = "<group>"; };
+		04D9E50C22D2D9CE00ACDFC6 /* SHUseDescriptionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHUseDescriptionViewCell.swift; sourceTree = "<group>"; };
+		04D9E50D22D2D9CE00ACDFC6 /* SHUseDescriptionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SHUseDescriptionViewCell.xib; sourceTree = "<group>"; };
+		04D9E51222D2E61400ACDFC6 /* useDescriptions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = useDescriptions.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				048C506922CEFFB50079928C /* SHMedicine.swift */,
+				04D9E50A22D2D7C200ACDFC6 /* SHSpecificDosage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -254,6 +263,8 @@
 			children = (
 				048C506022CEFFA30079928C /* SHMediactionCollectionViewCell.swift */,
 				048C506122CEFFA30079928C /* SHMediactionCollectionViewCell.xib */,
+				04D9E50C22D2D9CE00ACDFC6 /* SHUseDescriptionViewCell.swift */,
+				04D9E50D22D2D9CE00ACDFC6 /* SHUseDescriptionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -291,6 +302,7 @@
 				04B9FC6822CC916D00B97B3F /* Classes */,
 				04B9FC5A22CC89E000B97B3F /* Assets.xcassets */,
 				048C505022CEE0C80079928C /* tasks.plist */,
+				04D9E51222D2E61400ACDFC6 /* useDescriptions.plist */,
 				04B9FC5C22CC89E000B97B3F /* LaunchScreen.storyboard */,
 				04B9FC5F22CC89E000B97B3F /* Info.plist */,
 			);
@@ -422,10 +434,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D9E51322D2E61400ACDFC6 /* useDescriptions.plist in Resources */,
 				046F9F2B22CD943900BD8CC0 /* SHMainViewController.xib in Resources */,
 				046F9F4522CDC9F700BD8CC0 /* SHMedicalFileViewController.xib in Resources */,
 				048C505522CEE3770079928C /* SHTaskItemTableViewCell.xib in Resources */,
 				04B9FC5E22CC89E000B97B3F /* LaunchScreen.storyboard in Resources */,
+				04D9E50F22D2D9CE00ACDFC6 /* SHUseDescriptionViewCell.xib in Resources */,
 				046F9F3F22CDB1A200BD8CC0 /* SHHumenBodyViewController.xib in Resources */,
 				04B9FC5B22CC89E000B97B3F /* Assets.xcassets in Resources */,
 				046F9F5C22CDF79800BD8CC0 /* SHMapViewController.xib in Resources */,
@@ -458,8 +472,10 @@
 				046F9F5722CDF54100BD8CC0 /* SHWaitQueueViewController.swift in Sources */,
 				04B9FC7E22CC9B8500B97B3F /* SHSettingViewController.swift in Sources */,
 				046F9F4122CDC96900BD8CC0 /* SHAppointmentViewController.swift in Sources */,
+				04D9E50E22D2D9CE00ACDFC6 /* SHUseDescriptionViewCell.swift in Sources */,
 				046F9F2922CD90BA00BD8CC0 /* SHTaskToFlow.swift in Sources */,
 				048C506722CEFFA30079928C /* SHMediacationViewController.swift in Sources */,
+				04D9E50B22D2D7C200ACDFC6 /* SHSpecificDosage.swift in Sources */,
 				046F9F5322CDEC7600BD8CC0 /* SHPrelabTrainViewController.swift in Sources */,
 				04B9FC7622CC93C600B97B3F /* Bundle + Extension.swift in Sources */,
 				04B9FC5422CC89DF00B97B3F /* AppDelegate.swift in Sources */,
